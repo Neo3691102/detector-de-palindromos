@@ -1,69 +1,92 @@
-body{
-    background: linear-gradient(90deg,#6D83F2 25%, #4286F4 50%,  #6D83F2 85%);
-    font-family: sans-serif;
+body {
+  background: linear-gradient(90deg, #6d83f2 25%, #4286f4 50%, #6d83f2 85%);
+  font-family: sans-serif;
+}
+
+.body__title {
+  text-align: center;
+  color: white;
+}
+
+.container {
+  width: 40%;
+  height: 6rem;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 5px purple;
+}
+
+.container__p {
+  font-size: clamp(0.8rem, 1.2vw, 2rem);
+}
+
+.container__grupo {
+  padding: 0.5rem;
+  position: relative;
+  top: -0.1rem;
+}
+
+#text-input {
+  width: 60%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 3px solid purple;
+}
+
+#check-btn {
+  width: 6rem;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: purple;
+}
+
+#check-btn:hover {
+  opacity: 0.7;
+}
+
+.container__paldescription {
+  position: relative;
+  top: 2rem;
+  width: 40%;
+  background-color: green;
+  margin: 0 auto;
+  padding: 9px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 80%;
+    height: 140px;
   }
-  
-  .body__title{
-    text-align: center;
-    color: white;
+
+  #text-input {
+    width: 100%;
+    margin-bottom: 0.6rem;
   }
-  
-  .container{
-    width: 40%;
-    height: 6rem;
-    padding: 1rem;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    border-radius: 0.5rem;
-    box-shadow: 0 5px 5px purple;
+
+  #check-btn {
+    display: block;
   }
-  
-  .container__p{
-    font-size: clamp(0.5rem, 1.1rem, 2rem);
+
+  #result {
+    padding: 6px 0;
+    font-weight: 600;
   }
-  
-  .container__grupo{
-    
-    padding: 0.5rem;
-    position: relative;
-    top: -0.1rem;
+
+  .container__paldescription {
+    width: 80%;
   }
-  
-  #text-input{
-    width: 60%;
-    margin: 0 auto;
-    border: none;
-    border-bottom: 3px solid purple;
-  }
-  
-  
-  #check-btn{
-    width: 6rem;;
-    margin: 0 auto;
-    padding: 5px;
-    border-radius: 6px;
-    border:none;
-    cursor: pointer;
-    color: white;
-    background-color: purple;
-  }
-  
-  #check-btn:hover{
-    opacity: 0.7;
-  }
-  
-  .container__paldescription{
-    position: relative;
-    top: 2rem;
-    width: 40%;
-    background-color: green;
-    margin: 0 auto;
-    padding: 9px;
-    border-radius: 6px;
-    color: white;
-    font-weight: 700;
-  }
+}
