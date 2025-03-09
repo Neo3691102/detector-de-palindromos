@@ -66,6 +66,22 @@ body {
   font-weight: 700;
 }
 
+@media screen and (max-width: 425px){
+  .container{
+    width: 80%;
+  }
+
+  #result{
+    font-weight: 600;
+  }
+
+  .container__paldescription{
+    width: 80%;
+  }
+
+
+}
+
 @media screen and (max-width: 375px) {
   .container {
     width: 80%;
